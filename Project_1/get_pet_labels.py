@@ -9,9 +9,9 @@
 #          the image's filename. This function inputs:
 #           - The Image Folder as image_dir within get_pet_labels function and
 #             as in_arg.dir for the function call within the main function.
-#          This function creates and returns the results dictionary as labels_dic
+#          This function creates and returns the results dictionary as results_dic
 #          within get_pet_labels function and as results within main.
-#          The labels_dic dictionary has a 'key' that's the image filename and
+#          The results_dic dictionary has a 'key' that's the image filename and
 #          a 'value' that's a list. This list will contain the following item
 #          at index 0 : pet image label (string).
 #
@@ -20,12 +20,12 @@
 from os import listdir
 
 # TODO 2: Define get_pet_labels function below please be certain to replace None
-#       in the return statement with labels_dic dictionary that you create
+#       in the return statement with results_dic dictionary that you create
 #       with this function
 #
 def get_pet_labels(image_dir):
     pet_images = listdir(image_dir)
-    labels_dic = dict()
+    results_dic = dict()
 
     for i in range(0, len(pet_images), 1):
 
@@ -36,10 +36,10 @@ def get_pet_labels(image_dir):
                if word.isalpha():
                    pet_label += word.lower() + " "
            pet_label = pet_label.strip()
-           if pet_images[i] not in labels_dic:
-              labels_dic[pet_images[i]] = pet_label
+           if pet_images[i] not in results_dic:
+              results_dic[pet_images[i]] = pet_label
            else:
                print("Warning: Duplicate files exist in directory",
                      pet_images[i])
-    return(labels_dic)
-    items_in_dic = len(labels_dic)
+    return(results_dic)
+    items_in_dic = len(results_dic)
