@@ -1,0 +1,10 @@
+1623728907.5019538
+Command Line Arguments:
+     dir = pet_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 26 key-value pairs.
+Below are 10 of them:
+ 1 key:            run_models_batch.sh  label:                          r
+ 2 key:             vgg_pet-images.txt  label:                          v

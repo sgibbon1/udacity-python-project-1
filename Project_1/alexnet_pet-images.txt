@@ -1,0 +1,9 @@
+1623728902.679999
+Command Line Arguments:
+     dir = pet_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 25 key-value pairs.
+Below are 10 of them:
+ 1 key:            run_models_batch.sh  label:                          r
